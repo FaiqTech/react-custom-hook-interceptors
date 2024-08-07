@@ -1,11 +1,11 @@
 import React from "react";
 import { Spinner } from "reactstrap";
 
-const LoadingSpinner = () => (
+const LoadingSpinner = ({ loading }) => (
   <div
     id="loading"
     style={{
-      display: "none",
+      display: loading ? "block" : "none",
       textAlign: "center",
       position: "fixed",
       top: "50%",
